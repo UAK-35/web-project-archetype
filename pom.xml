@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>com.uak</groupId>
+  <artifactId>web-project-archetype</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>Archetype - web-project-archetype</name>
+  <description>
+    An archetype which contains a sample Maven Webapp project.
+  </description>
+  <url>http://maven.apache.org</url>
+
+<!-- mvn archetype:generate -DgroupId=com.uak -DartifactId=web-project-archetype -DarchetypeArtifactId=maven-archetype-archetype   -->
+<!-- mvn archetype:generate -DarchetypeGroupId=com.uak -DarchetypeArtifactId=web-project-archetype -DarchetypeVersion=0.0.1-SNAPSHOT -DgroupId=com.fit.fm -DartifactId=FM-TEST -Dversion=0.0.0.1-SNAPSHOT -->
+
+	<properties>
+		<java.version>1.8</java.version>
+
+		<maven.eclipse.version>2.10</maven.eclipse.version>
+		<surefire.version>2.18.1</surefire.version>
+		<duplicate.finder.version>1.0.9</duplicate.finder.version>
+		<maven.source.version>2.4</maven.source.version>
+		<maven.clean.version>2.6.1</maven.clean.version>
+		<maven.install.version>2.5.2</maven.install.version>
+		<maven.compiler.version>3.2</maven.compiler.version>
+		<maven.jar.version>2.5</maven.jar.version>
+		<maven.war.version>2.6</maven.war.version>
+		<maven.archiver.version>2.6</maven.archiver.version>
+		<maven.javadoc.version>2.10.3</maven.javadoc.version>
+		<maven.deploy.version>2.8.2</maven.deploy.version>
+		<maven.site.version>3.4</maven.site.version>
+	</properties>
+
+	<build>
+		<pluginManagement>		
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>${maven.install.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>${maven.deploy.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>${maven.clean.version}</version>
+				<configuration>
+					<skip>false</skip>
+					<failOnError>false</failOnError>
+					<filesets>
+						<fileset>
+							<directory>${basedir}</directory>
+							<includes>
+								<include>**/*.tmp</include>
+								<include>**/*.log</include>
+								<include>**/*.bak</include>
+								<include>**/*.txt</include>
+							</includes>
+							<excludes>
+								<exclude>**/important.log</exclude>
+								<exclude>**/another-important.log</exclude>
+							</excludes>
+							<followSymlinks>false</followSymlinks>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
