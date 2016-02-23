@@ -4,7 +4,7 @@
  
   <groupId>com.uak</groupId>
   <artifactId>web-project-archetype</artifactId>
-  <version>0.0.0.6-SNAPSHOT</version>
+  <version>0.0.0.6</version>
 
   <name>Archetype - web-project-archetype</name>
   <description>
@@ -43,7 +43,8 @@
 		<url>scm:git:git@github.com:UAK-35/web-project-archetype.git</url>
 		<developerConnection>scm:git:git@github.com:UAK-35/web-project-archetype.git</developerConnection>
 		<!-- <tag>web-project-archetype-0.0.0.5</tag> -->
-	</scm>
+	  <tag>web-project-archetype-0.0.0.6</tag>
+  </scm>
 
 	<build>
 		<pluginManagement>		
