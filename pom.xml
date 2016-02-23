@@ -4,7 +4,7 @@
 
 	<groupId>com.uak</groupId>
 	<artifactId>web-project-archetype</artifactId>
-	<version>0.0.0.7</version>
+	<version>0.0.0.8-SNAPSHOT</version>
 	<name>Archetype - web-project-archetype</name>
 	<description>An archetype which contains a sample Maven Webapp project.</description>
 
@@ -37,11 +37,20 @@
 
 	<scm>
 		<connection>scm:git:git@github.com:UAK-35/web-project-archetype.git</connection>
-		<url>scm:git:git@github.com:UAK-35/web-project-archetype.git</url>
 		<developerConnection>scm:git:git@github.com:UAK-35/web-project-archetype.git</developerConnection>
-	  <tag>web-project-archetype-0.0.0.7</tag>
-  </scm>
-
+		<!-- <url>scm:git:git@github.com:UAK-35/web-project-archetype.git</url> -->
+		<url>https://github.com/UAK-35/web-project-archetype</url>
+	</scm>
+<!-- <distributionManagement> -->
+<!-- 	<repository> -->
+<!-- 		<id>repo</id> -->
+<!-- 		<url>https://github.com/UAK-35/web-project-archetype/raw/master/releases</url> -->
+<!-- 	</repository> -->
+<!-- 	<snapshotRepository> -->
+<!-- 		<id>snapshot-repo</id> -->
+<!-- 		<url>>https://github.com/UAK-35/web-project-archetype/raw/master/snapshots</url> -->
+<!-- 	</snapshotRepository> -->
+<!-- </distributionManagement> -->
 	<build>
 		<pluginManagement>
 			<plugins>
