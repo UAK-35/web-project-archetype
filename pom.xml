@@ -31,14 +31,16 @@
 		<maven.javadoc.version>2.10.3</maven.javadoc.version>
 		<maven.deploy.version>2.8.2</maven.deploy.version>
 		<maven.site.version>3.4</maven.site.version>
+		
+		<project.scm.id>github-server</project.scm.id>
 	</properties>
 
 	<scm>
 		<connection>scm:git:git@github.com:UAK-35/web-project-archetype.git</connection>
 		<url>scm:git:git@github.com:UAK-35/web-project-archetype.git</url>
 		<developerConnection>scm:git:git@github.com:UAK-35/web-project-archetype.git</developerConnection>
-	  <tag>web-project-archetype-0.0.0.5</tag>
-  </scm>
+		<tag>web-project-archetype-0.0.0.5</tag>
+	</scm>
 
 	<build>
 		<pluginManagement>		
