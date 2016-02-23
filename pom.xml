@@ -4,7 +4,7 @@
 
 	<groupId>com.uak</groupId>
 	<artifactId>web-project-archetype</artifactId>
-	<version>0.0.0.7-SNAPSHOT</version>
+	<version>0.0.0.7</version>
 	<name>Archetype - web-project-archetype</name>
 	<description>An archetype which contains a sample Maven Webapp project.</description>
 
@@ -39,7 +39,8 @@
 		<connection>scm:git:git@github.com:UAK-35/web-project-archetype.git</connection>
 		<url>scm:git:git@github.com:UAK-35/web-project-archetype.git</url>
 		<developerConnection>scm:git:git@github.com:UAK-35/web-project-archetype.git</developerConnection>
-	</scm>
+	  <tag>web-project-archetype-0.0.0.7</tag>
+  </scm>
 
 	<build>
 		<pluginManagement>
